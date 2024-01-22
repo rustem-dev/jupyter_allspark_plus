@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jupyter_ryeleussinov:
+    image: jupyter/all-spark-notebook
+    volumes:
+      - /home/ryeleussinov/src/config/workspace:/home/jovyan/work
+    ports:
+      - "8887:8888"
+      
+  # jupyter_temirlan:
+  #   image: jupyter/all-spark-notebook
+  #   volumes:
+  #     - /home/temirlan:/home/jovyan/work
+  #   ports:
+  #     - "<new_port2>:8888"
