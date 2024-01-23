@@ -4,6 +4,7 @@ services:
     image: jupyter/all-spark-notebook
     volumes:
       - /home/ryeleussinov/src/config/workspace:/home/jovyan/work
+      - conda_env:/opt/conda
     ports:
       - "8887:8888"
       
