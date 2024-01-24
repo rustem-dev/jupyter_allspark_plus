@@ -7,6 +7,10 @@ services:
       - conda_env:/opt/conda
     ports:
       - "8887:8888"
+  
+volumes:
+  conda_env:
+    external: true
       
   # jupyter_temirlan:
   #   image: jupyter/all-spark-notebook
